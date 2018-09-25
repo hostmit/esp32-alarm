@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+    label {
+        display: block;
+        padding-bottom:2px;
+        padding-top: 10px;
+    }
+    button {
+        display: block;
+        margin-top:10px;
+    }
+    hr {
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+</style>
+
+
+<body>
+    <form action="">
+        <label>name 20 alphanum+undersocre</label>
+        <input type="text" name="name" maxlength="20" pattern="(^\w{1,20}$)"required>
+        <label>phone +380*********</label>
+        <input type="text" name="phone" maxlength="13" pattern="(^$|^\+380\d{9}$)">
+        <label>telegram</label>
+        <input type="text" name="telegram" maxlength="32" pattern="(^$|^\d{5,32}$)">
+        <label>rfid</label>
+        <input type="text" size="32" name="rfid" maxlength="32" pattern="(^$|^[a-zA-Z0-9_]{32}$)">
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

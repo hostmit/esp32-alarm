@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+    label {
+        display: block;
+        padding-bottom:2px;
+        padding-top: 10px;
+    }
+    button {
+        display: block;
+        margin-top:10px;
+    }
+    hr {
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+</style>
+
+
+<body>
+    <form action="">
+        <label>gpio</label>
+        <input type="text" name="gpio" maxlength="2" pattern="(^\d{1,2}$)"required>
+        
+        <label>mode</label>
+        <select name="mode">
+            <option value="in">in</option>
+            <option value="out">out</option>
+          </select>
+        <label>normalValue</label>
+        <select name="normalValue">
+            <option value="true">true</option>
+            <option value="false" selected>false</option>
+        </select>
+        <label>name</label>
+        <input type="text" size="20" name="name" maxlength="20" pattern="(^$|^[a-zA-Z0-9_ ]{0..20}$)">
+        
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

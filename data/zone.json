@@ -1,0 +1,1 @@
+[{"id":0,"name":"office","pinIds":[0,1,2],"userIds":[0],"rfidIps":["10.10.10.10"]},{"id":1,"name":"house","pinIds":[3,4],"userIds":[0],"rfidIps":[]}]
